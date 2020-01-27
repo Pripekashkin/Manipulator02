@@ -1,0 +1,8 @@
+prefix=/home/noreply/Manipulator02/install
+
+Name: manipulator1ver
+Description: Description of manipulator1ver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

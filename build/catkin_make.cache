@@ -1,2 +1,2 @@
-
+manipulator1ver
 -DCATKIN_DEVEL_PREFIX=/home/noreply/Manipulator02/devel -DCMAKE_INSTALL_PREFIX=/home/noreply/Manipulator02/install -G Unix Makefiles
