@@ -1,5 +1,5 @@
 git status
-git add <name>
+git add <name> !or! -A
 git push -u origin <name master>
 git commit -m "<name commistat>"
 git push

@@ -24,7 +24,7 @@
               
   <m_joint name="${link_00_name}__${link_01_name}" type="revolute"
            axis_xyz="0 0 1"
-           origin_rpy="0 0 0" origin_xyz="0 0 0.0059"
+           origin_rpy="0 0 0" origin_xyz="0 0 0.059"
            parent="base_link" child="link_01"
            limit_e="1000" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
            
@@ -41,20 +41,74 @@
   
     <m_joint name="${link_01_name}__${link_02_name}" type="revolute"
            axis_xyz="1 0 0"
-           origin_rpy="0 0 0" origin_xyz="0 0 0.0061"
+           origin_rpy="0 0 0" origin_xyz="0 0 0.05"
            parent="link_01" child="link_02"
            limit_e="1000" limit_l="-1.57" limit_u="1.57" limit_v="0.5" />
 		   
 		   
   <m_link_mesh name="${link_02_name}"
-              origin_rpy="1.57 0 0" origin_xyz="0 0 -0.0013"
+              origin_rpy="1.57 0 0" origin_xyz="0 0 -0.013"
               mass="157.633"
               ixx="13.235" ixy="0" ixz="0"
               iyy="13.235" iyz="0"
               izz="9.655"
               meshfile="package://manipulator1ver/meshes/stl/3.stl"
               meshscale="0.001 0.001 0.001" />
+	  
+			  
+   <m_joint name="${link_02_name}__${link_03_name}" type="revolute"
+           axis_xyz="1 0 0"
+           origin_rpy="0 0 0" origin_xyz="0 0.03 0.165"
+           parent="link_02" child="link_03"
+           limit_e="1000" limit_l="-1.57" limit_u="1.57" limit_v="0.5" />
   
+  
+   <m_link_mesh name="${link_03_name}"
+              origin_rpy="0 0 0" origin_xyz="0 -0.013 0"
+              mass="157.633"
+              ixx="13.235" ixy="0" ixz="0"
+              iyy="13.235" iyz="0"
+              izz="9.655"
+              meshfile="package://manipulator1ver/meshes/stl/4.stl"
+              meshscale="0.001 0.001 0.001" />
+			 
+			 
+   <m_joint name="${link_03_name}__${link_04_name}" type="revolute"
+           axis_xyz="0 1 0"
+           origin_rpy="0 0 0" origin_xyz="0 0 0"
+           parent="link_03" child="link_04"
+           limit_e="1000" limit_l="-1.57" limit_u="1.57" limit_v="0.5" />
+		   
+		   
+   <m_link_mesh name="${link_04_name}"
+              origin_rpy="0 3.14 0" origin_xyz="0 0.151 0" 
+              mass="157.633"
+              ixx="13.235" ixy="0" ixz="0"
+              iyy="13.235" iyz="0"
+              izz="9.655"
+              meshfile="package://manipulator1ver/meshes/stl/5.stl"
+              meshscale="0.001 0.001 0.001" />		
+			  
+
+   <m_joint name="${link_04_name}__${link_05_name}" type="revolute"
+           axis_xyz="1 0 0"
+           origin_rpy="0 0 0" origin_xyz="0.015 0.185 0"
+           parent="link_04" child="link_05"
+           limit_e="1000" limit_l="-1.57" limit_u="1.57" limit_v="0.5" />			
+
+<!--
+0 0.151 0  
+-->
+
+
+  <m_link_mesh name="${link_05_name}"
+              origin_rpy="1.57 -1.57 0" origin_xyz="0 0.056 0" 
+              mass="157.633"
+              ixx="13.235" ixy="0" ixz="0"
+              iyy="13.235" iyz="0"
+              izz="9.655"
+              meshfile="package://manipulator1ver/meshes/stl/6.stl"
+              meshscale="0.001 0.001 0.001" />			   
   
   <!-- END - Robot description -->
   
