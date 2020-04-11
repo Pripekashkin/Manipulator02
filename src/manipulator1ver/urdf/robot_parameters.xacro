@@ -6,4 +6,7 @@
   <xacro:property name="link_03_name" value="link_03" />
   <xacro:property name="link_04_name" value="link_04" />
   <xacro:property name="link_05_name" value="link_05" />
+  <xacro:property name="link_06_name" value="link_06" />
+  <xacro:property name="link_07_name" value="link_07" />
+  <xacro:property name="link_08_name" value="link_08" />
 </robot>
