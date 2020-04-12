@@ -122,7 +122,8 @@
               izz="9.655"
               meshfile="package://manipulator1ver/meshes/stlGrab/5ServoGrab.stl"
               meshscale="0.001 0.001 0.001" />
-			  			  
+	
+
 
   <!-- END - Robot description -->
   
