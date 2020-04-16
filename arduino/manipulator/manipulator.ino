@@ -4,7 +4,7 @@
 #include "AX12A.h"
 
 #define DirectionPin  (10)
-#define BaudRate      (57600)
+#define BaudRate      (117600)
 //#define Broadcast     (254u)
 #define Basic_speed (30)
 
@@ -14,7 +14,7 @@ bool f = 1;
 
 void setup() {
     Serial.begin(9600);
-    Serial3.begin(57600);
+    Serial3.begin(117600);
     ax12a.begin(BaudRate, DirectionPin, &Serial3);
 }
 void poweron(){
@@ -27,9 +27,12 @@ void poweron(){
 }
 
 void loop() {
-  
-poweron();
-Serial.print("work");
+
+  for (int i = 0; i <= 3; i++){
+    Serial.println(ax12a.readPosition(i));
+    delay(50);
+  }
+Serial.println("------------");
 
 
 }

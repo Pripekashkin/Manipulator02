@@ -123,20 +123,20 @@
               meshfile="package://manipulator1ver/meshes/stlGrab/5ServoGrab.stl"
               meshscale="0.001 0.001 0.001" />
 	
-  <m_joint name="world" type="fixed"
-           axis_xyz="1 0 0"
-           origin_rpy="0 0 0" origin_xyz="0 0 0"
-           parent="link_00" child="objects"
-           limit_e="1000" limit_l="0" limit_u="0.02" limit_v="0.5" />		
+  <!-- <m_joint name="world" type="fixed" -->
+           <!-- axis_xyz="1 0 0" -->
+           <!-- origin_rpy="0 0 0" origin_xyz="0 0 0" -->
+           <!-- parent="link_00" child="objects" -->
+           <!-- limit_e="1000" limit_l="0" limit_u="0.02" limit_v="0.5" />		 -->
 
-<m_link_mesh name="objects"
-              origin_rpy="1.57 0 0" origin_xyz="0 0 0"
-              mass="157.633"
-              ixx="13.235" ixy="0" ixz="0"
-              iyy="13.235" iyz="0"
-              izz="9.655"
-              meshfile="package://manipulator1ver/meshes/Objects/OnGlass.stl"
-              meshscale="0.001 0.001 0.001" />
+<!-- <m_link_mesh name="objects" -->
+              <!-- origin_rpy="1.57 0 0" origin_xyz="0 0 0" -->
+              <!-- mass="157.633" -->
+              <!-- ixx="13.235" ixy="0" ixz="0" -->
+              <!-- iyy="13.235" iyz="0" -->
+              <!-- izz="9.655" -->
+              <!-- meshfile="package://manipulator1ver/meshes/Objects/OnGlass.stl" -->
+              <!-- meshscale="0.001 0.001 0.001" /> -->
 
   <!-- END - Robot description -->
   
