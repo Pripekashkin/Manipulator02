@@ -1,0 +1,6 @@
+#!/bin/bash
+export BEEP=/home/noreply/SSH/line_open.ogg
+alias beep='paplay $BEEP'bp
+#gnome-terminal --working-directory=/home/noreply/Manipulator02 --command beep 
+#gnome-terminal --working-ditectory=/home/noreply/Manipulator02 --command beep
+

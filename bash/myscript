@@ -1,0 +1,11 @@
+#!/bin/bash 
+#Launch Moveit in Rviz
+
+source /home/noreply/Manipulator02/devel/setup.bash; 
+gnome-terminal  -x sh -c ' 
+roslaunch test2 demo.launch; 
+export BEEP=/home/noreply/SSH/wrong.ogg; 
+paplay $BEEP;
+'
+
+

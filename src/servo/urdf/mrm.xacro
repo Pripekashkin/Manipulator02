@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+
+<robot name="mrm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  
+  <!-- BGN - Include -->
+  <xacro:include filename="$(find servo)/urdf/links_joints.xacro" />
+  <!-- END - Include -->
+  
+    <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+  
+  <!-- BGN - Robot description -->
+  <m_link_mesh name="Servo"	
+              origin_rpy="1.57 0 0" origin_xyz="0 0 0"
+              mass="157.633"
+              ixx="13.235" ixy="0" ixz="0"
+              iyy="13.235" iyz="0"
+              izz="9.655"
+              meshfile="package://servo/meshes/servo.stl"
+              meshscale="0.001 0.001 0.001" />
+			  
+              
+  <m_joint name="Rotate" type="revolute"
+           axis_xyz="0 0 1"
+           origin_rpy="0 0 0" origin_xyz="0 0 0.049"
+           parent="Servo" child="Horn"
+           limit_e="1000" limit_l="-3.14" limit_u="3.14" limit_v="0.5" />
+		   
+	  <m_link_mesh name="Horn"
+              origin_rpy="1.57 0 0" origin_xyz="0 0 0"
+              mass="157.633"
+              ixx="13.235" ixy="0" ixz="0"
+              iyy="13.235" iyz="0"
+              izz="9.655"
+              meshfile="package://servo/meshes/servohorn.stl"
+              meshscale="0.001 0.001 0.001" />			
+
+  
+</robot>

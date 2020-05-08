@@ -1,0 +1,19 @@
+controller_list:
+  - name: fake_arm_controller
+    joints:
+      - Rotate
+      - 1stick
+      - 2stick
+      - 3to4
+  - name: fake_Grab_controller
+    joints:
+      - GrabR
+      - Grabl
+  - name: fake_All_controller
+    joints:
+      - Rotate
+      - 1stick
+      - 2stick
+      - 3to4
+      - GrabR
+      - Grabl

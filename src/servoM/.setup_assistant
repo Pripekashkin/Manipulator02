@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: servo
+    relative_path: urdf/mrm.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/mrm.srdf
+  CONFIG:
+    author_name: Noreply
+    author_email: dsf@fd.fg
+    generated_timestamp: 1588931587

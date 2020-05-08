@@ -127,8 +127,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/noreply/Manipulator02/build/gtest/cmake_install.cmake")
   include("/home/noreply/Manipulator02/build/manipulator1ver/cmake_install.cmake")
-  include("/home/noreply/Manipulator02/build/BallEditor/cmake_install.cmake")
-  include("/home/noreply/Manipulator02/build/moveit/cmake_install.cmake")
+  include("/home/noreply/Manipulator02/build/servo/cmake_install.cmake")
+  include("/home/noreply/Manipulator02/build/test2/cmake_install.cmake")
+  include("/home/noreply/Manipulator02/build/test/cmake_install.cmake")
 
 endif()
 
