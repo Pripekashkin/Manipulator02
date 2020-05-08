@@ -23,8 +23,8 @@ char result[50];
 
 void JointsCallback(const sensor_msgs::JointState& cmd_msg){
   ax12a.moveSpeed(0, pos, Basic_speed); //go to zero
-  pos =+ ceil(RadiansToDegrees(cmd_msg.position[0]));
-
+ pos = ceil(radToDyn(cmd_msg.position[0]));
+   
   
   
 }
@@ -54,7 +54,7 @@ void loop()
 
 }
 
-inline float RadiansToDegrees(float position_radians)
+inline float radToDyn(float position_radians) //convert radians to degree
 {
-  return position_radians / 0.001533;
+  return 4095 * ((180 + position_radians * 57.2958) / 360);
 }
