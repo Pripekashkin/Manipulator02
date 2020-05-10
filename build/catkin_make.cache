@@ -1,2 +1,2 @@
-manipulator1ver:servo:test:test2
+industrial_core/industrial_core:industrial_core/industrial_deprecated:industrial_core/industrial_msgs:industrial_core/industrial_robot_client:industrial_core/industrial_robot_simulator:industrial_core/industrial_trajectory_filters:industrial_core/industrial_utils:industrial_core/simple_message:manipulator1ver:servo:servoM:test:test2
 -DCATKIN_DEVEL_PREFIX=/home/noreply/Manipulator02/devel -DCMAKE_INSTALL_PREFIX=/home/noreply/Manipulator02/install -G Unix Makefiles

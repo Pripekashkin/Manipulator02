@@ -7,4 +7,9 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/noreply/Manipulator02/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/noreply/Manipulator02/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/noreply/Manipulator02/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/noreply/Manipulator02/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/noreply/Manipulator02/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/noreply/Manipulator02/src:$ROS_PACKAGE_PATH"

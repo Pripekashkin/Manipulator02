@@ -1,4 +1,4 @@
 controller_list:
-  - name: fake_Rotate_controller
+  - name: fake_Manipulator_controller
     joints:
       - Rotate
