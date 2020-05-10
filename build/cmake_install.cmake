@@ -128,6 +128,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/noreply/Manipulator02/build/gtest/cmake_install.cmake")
   include("/home/noreply/Manipulator02/build/manipulator1ver/cmake_install.cmake")
   include("/home/noreply/Manipulator02/build/servo/cmake_install.cmake")
+  include("/home/noreply/Manipulator02/build/servoM/cmake_install.cmake")
   include("/home/noreply/Manipulator02/build/test2/cmake_install.cmake")
   include("/home/noreply/Manipulator02/build/test/cmake_install.cmake")
 

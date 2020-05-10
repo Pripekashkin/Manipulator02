@@ -7,5 +7,6 @@
 subdirs(gtest)
 subdirs(manipulator1ver)
 subdirs(servo)
+subdirs(servoM)
 subdirs(test2)
 subdirs(test)
