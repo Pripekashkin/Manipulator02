@@ -12,6 +12,7 @@
 #include <tf/tf.h>
 
 
+
 #define DirectionPin  (10)
 #define BaudRate      (117600)
 #define Basic_speed   (30)
@@ -29,12 +30,13 @@ double theta = 0;
 
 
 void JointsCallback(const sensor_msgs::JointState& cmd_msg){
-  ax12a.moveSpeed(0, pos, Basic_speed); //go to zero
-    pos = ceil(radToDyn(cmd_msg.position[0]));    
+  //ax12a.moveSpeed(0, pos, Basic_speed); //go to zero
+    pos = cmd_msg.position[0];  
+
 }
 
 
-//ros::Subscriber<sensor_msgs::JointState> jointsCallback("joint_states", &JointsCallback );//subscribe
+ros::Subscriber<sensor_msgs::JointState> jointsCallback("move_group/display_planned_path", &JointsCallback );//subscribe
 
 sensor_msgs::JointState msg;
 
@@ -47,8 +49,8 @@ void setup()
 {
   pinMode(13, OUTPUT);
   nh.initNode();
-  //nh.subscribe(jointsCallback);
-      nh.advertise(pub);
+  nh.subscribe(jointsCallback);
+  nh.advertise(pub);
 
 
 
@@ -60,8 +62,8 @@ void setup()
 void loop()
 {
 
-      //dtostrf(pos,6, 2, result); 
-      //nh.loginfo(result); //echo to uart
+    dtostrf(pos,6, 2, result); 
+    nh.loginfo(result); //echo to uart
     
 
 
